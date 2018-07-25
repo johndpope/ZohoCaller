@@ -1,0 +1,146 @@
+/* 
+  File.strings
+  ZohoSearchKit
+
+  Created by hemant kumar s. on 10/01/18.
+  Copyright © 2018 hemant kumar s. All rights reserved.
+*/
+
+/* Search result page messages */
+"searchkit.results.viewall" = "View All";
+"searchkit.results.viewmore" = "View more";
+"searchkit.results.viewless" = "View Less";
+"searchkit.results.pulltorefresh" = "Pull to refresh";
+/* If there is any separator or prefix or suffix needed, then it should added in messae itself, like below */
+"searchkit.results.searching" = "Searching...";
+"searchkit.results.endofresults" = "--- End of Search Results ---";
+
+/* Search suggestion view page, ui messages */
+"searchkit.suggestion.application" = "Applications";
+"searchkit.suggestion.contacts" = "Contacts";
+"searchkit.suggestion.recentsearches" = "Recent Searches";
+"searchkit.suggestion.savedsearches" = "Saved Searches";
+
+/* Snackbar messages */
+"searchkit.snackbar.previewnotsupported" = "Preview is not supported!";
+"searchkit.snackbar.zoho" = "Zoho";
+"searchkit.snackbar.appnotinstalled" = "app is not installed!";
+"searchkit.snackbar.installbutton" = "INSTALL";
+
+/* Service Names to be displayed in service tab and all service sarch */
+"searchkit.servicedisplayname.all" = "All";
+"searchkit.servicedisplayname.mails" = "Mail";
+"searchkit.servicedisplayname.chat" = "Cliq";
+"searchkit.servicedisplayname.connect" = "Connect";
+"searchkit.servicedisplayname.documents" = "Docs";
+"searchkit.servicedisplayname.personalContacts" = "Contacts";
+"searchkit.servicedisplayname.people" = "People";
+"searchkit.servicedisplayname.support" = "Desk";
+"searchkit.servicedisplayname.crm" = "CRM";
+"searchkit.servicedisplayname.wiki" = "Wiki";
+"searchkit.servicedisplayname.reports" = "Reports";
+/* Settings UI messages */
+"searchkit.settings.reorderservice" = "Service Reordering";
+"searchkit.settings.defaultserviceselection" = "Default Service Selection";
+"searchkit.settings.recentsearches" = "Recent Searches";
+"searchkit.settings.savedsearches" = "Saved Searches";
+"searchkit.settings.enablehighlighting" = "Show Highlights";
+"searchkit.settings.enablehighlighting.hint" = "Will highlight the matched words in results.";
+"searchkit.settings.enablepulltorefresh" = "Pull to Refresh";
+"searchkit.settings.enablepulltorefresh.hint" = "Will enable pull to refresh in results page.";
+
+/* Filter Constants */
+"searchkit.filters.mail.account.emailId" = "Accounts";
+"searchkit.filters.mail.folder.folderId" = "Folders";
+"searchkit.filters.mail.searchin" = "Search In";
+"searchkit.filters.mail.tags.labelId" = "Tags";
+
+/*Folder modules */
+"searchkit.filters.mail.folder.folderId.allfolders" = "All Folders";
+/* Check List */
+"searchkit.filters.mail.checkList.hasAtt" = "With Attachments";
+"searchkit.filters.mail.checkList.hasFlg" = "Flagged";
+"searchkit.filters.mail.checkList.hasResp" = "With Replies";
+
+/* Tags */
+"searchkit.filters.mail.tags.labelId.alltags" = "All Tags";
+/* Search In */
+"searchkit.filters.mail.searchin.entire" = "Entire Message";
+"searchkit.filters.mail.searchin.subject" = "Subject";
+"searchkit.filters.mail.searchin.content" = "Content";
+"searchkit.filters.mail.searchin.attname" = "Attachment Name";
+"searchkit.filters.mail.searchin.attcontent" = "Attachment Content";
+
+
+/* Date Ranges */
+"searchkit.filters.daterange" = "Date";
+"searchkit.filters.daterange.alldays" = "All Days";
+"searchkit.filters.daterange.today" = "Today";
+"searchkit.filters.daterange.yesterday" = "Yesterday";
+"searchkit.filters.daterange.last7days" = "Last 7 days";
+"searchkit.filters.daterange.thismonth" = "This month";
+"searchkit.filters.daterange.thisyear" = "This year";
+"searchkit.filters.daterange.specificdate" = "Specific date";
+"searchkit.filters.daterange.customdate" = "Custom range";
+
+/* Sort By */
+"searchkit.filters.sort" = "Sort By";
+"searchkit.filters.sort.sorttime" = "Time";
+"searchkit.filters.sort.sortrelv" = "Relavance";
+
+/* CLiq modules */
+//date module and sortby module
+
+/* Connect */
+"searchkit.filters.connect.portals.connectId" = "Portals";
+"searchkit.filters.connect.searchin" = "Search In";
+//date module and Sortby modules
+
+/* Connect Module Search in */
+"searchkit.filters.connect.searchin.feeds" = "Feeds";
+"searchkit.filters.connect.searchin.forums" = "Forums";
+
+/* Docs */
+"searchkit.filters.docs.ownerType" = "Ownership Type";
+"searchkit.filters.docs.searchin" = "File Types";
+// and sort by
+
+/* Docs - Ownership */
+"searchkit.filters.docs.ownerType.allfiles" = "All Files";
+"searchkit.filters.docs.ownerType.mydocs" = "Owned by Me";
+"searchkit.filters.docs.ownerType.sharedtome" = "Shared with Me";
+"searchkit.filters.docs.ownerType.sharedbyme" = "Shared by Me";
+
+/* Docs-searchin -Types */
+"searchkit.filters.docs.searchin.alltypes" = "All Types";
+"searchkit.filters.docs.searchin.writer" = "Document";
+"searchkit.filters.docs.searchin.sheet" = "Spreadsheets";
+"searchkit.filters.docs.searchin.show" = "Presentation";
+"searchkit.filters.docs.searchin.pdf" = "PDF";
+"searchkit.filters.docs.searchin.image" = "Pictures";
+"searchkit.filters.docs.searchin.music" = "Music";
+"searchkit.filters.docs.searchin.video" = "Videos";
+"searchkit.filters.docs.searchin.zip" = "ZIP";
+
+/* CRM */
+"searchkit.filters.crm.moduleName" = "Modules";
+"searchkit.filters.crm.moduleName.all_crm_mod" = "All Modules";
+/*Desk*/
+"searchkit.filters.desk.portalId" = "Portals";
+"searchkit.filters.desk.deptId" = "Departments";
+"searchkit.filters.desk.moduleId" = "Modules";
+// and sort by filter
+
+/*Desk - modules*/
+"searchkit.filters.desk.moduleId.0" = "All Modules";
+
+
+/*Wiki*/
+"searchkit.filters.wiki.wikitype" = "Wiki Type";
+"searchkit.filters.wiki.wikiId" = "Portals";
+// sortby and date modules
+
+/* wiki types */
+"searchkit.filters.wiki.wikitype.0" = "My Wikis";
+"searchkit.filters.wiki.wikitype.1" = "Subscribed Wikis";
+

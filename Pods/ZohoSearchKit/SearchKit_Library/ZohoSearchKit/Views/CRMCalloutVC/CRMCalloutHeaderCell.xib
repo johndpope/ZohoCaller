@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CRMCalloutHeaderCell" customModule="ZohoSearchKit" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="54" id="C15-bn-K8k" customClass="CRMCalloutHeaderCell" customModule="ZohoSearchKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="492" height="54"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C15-bn-K8k" id="ngv-eb-LA0">
+                <rect key="frame" x="0.0" y="0.0" width="492" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjV-WH-8s0" userLabel="backgroundView">
+                        <rect key="frame" x="0.0" y="0.0" width="492" height="53.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="urT-33-xle">
+                                <rect key="frame" x="20" y="3.5" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="CTh-ty-Ezn"/>
+                                    <constraint firstAttribute="width" constant="44" id="RiE-FD-bHg"/>
+                                    <constraint firstAttribute="width" secondItem="urT-33-xle" secondAttribute="height" id="nhS-z4-h8q"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCM-4E-l7t">
+                                <rect key="frame" x="-20" y="52.5" width="532" height="1"/>
+                                <color key="backgroundColor" red="0.88692366623031305" green="0.88692366623031305" blue="0.88692366623031305" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="S0P-0D-xxo"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRM Module Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9n-si-JLP">
+                                <rect key="frame" x="84" y="3.5" width="398" height="48.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="208" id="zn5-ZQ-dbP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="a9n-si-JLP" secondAttribute="trailing" constant="10" id="7IB-MI-Bga"/>
+                            <constraint firstAttribute="trailing" secondItem="BCM-4E-l7t" secondAttribute="trailing" constant="-20" id="DQw-6q-7oE"/>
+                            <constraint firstAttribute="bottom" secondItem="BCM-4E-l7t" secondAttribute="bottom" id="IZl-qq-3Ki"/>
+                            <constraint firstItem="a9n-si-JLP" firstAttribute="baseline" secondItem="urT-33-xle" secondAttribute="baseline" id="J7d-42-Gen"/>
+                            <constraint firstItem="BCM-4E-l7t" firstAttribute="top" secondItem="urT-33-xle" secondAttribute="bottom" constant="5" id="NNw-Su-i9Y"/>
+                            <constraint firstItem="a9n-si-JLP" firstAttribute="leading" secondItem="urT-33-xle" secondAttribute="trailing" constant="20" id="ZyC-UY-IZE"/>
+                            <constraint firstItem="urT-33-xle" firstAttribute="leading" secondItem="UjV-WH-8s0" secondAttribute="leading" constant="20" id="gkr-yL-B1x"/>
+                            <constraint firstItem="BCM-4E-l7t" firstAttribute="leading" secondItem="UjV-WH-8s0" secondAttribute="leading" constant="-20" id="n5F-JF-09v"/>
+                            <constraint firstItem="urT-33-xle" firstAttribute="top" secondItem="a9n-si-JLP" secondAttribute="top" id="xYJ-tM-N1Z"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UjV-WH-8s0" firstAttribute="top" secondItem="ngv-eb-LA0" secondAttribute="top" id="2Xf-Wl-RFt"/>
+                    <constraint firstItem="UjV-WH-8s0" firstAttribute="leading" secondItem="ngv-eb-LA0" secondAttribute="leading" id="VOb-Uk-vC3"/>
+                    <constraint firstAttribute="bottom" secondItem="UjV-WH-8s0" secondAttribute="bottom" id="g8b-51-9Rq"/>
+                    <constraint firstAttribute="trailing" secondItem="UjV-WH-8s0" secondAttribute="trailing" id="v8U-4S-L2b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgView" destination="UjV-WH-8s0" id="q7Z-s9-39j"/>
+                <outlet property="crmModuleImageView" destination="urT-33-xle" id="fXF-GU-RRk"/>
+                <outlet property="crmTitle" destination="a9n-si-JLP" id="S49-Y0-nds"/>
+                <outlet property="separatorLine" destination="BCM-4E-l7t" id="BS8-yq-FQX"/>
+            </connections>
+            <point key="canvasLocation" x="-162" y="-171"/>
+        </tableViewCell>
+    </objects>
+</document>

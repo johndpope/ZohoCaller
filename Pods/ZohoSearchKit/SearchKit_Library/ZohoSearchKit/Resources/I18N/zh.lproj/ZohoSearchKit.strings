@@ -1,0 +1,11 @@
+/* 
+  File.strings
+  ZohoSearchKit
+
+  Created by hemant kumar s. on 10/01/18.
+  Copyright © 2018 hemant kumar s. All rights reserved.
+*/
+
+/* Search result page messages */
+"searchkit.results.viewall" = "查看更多";
+"searchkit.results.viewless" = "查看更少";

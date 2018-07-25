@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gMu-35-RIQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Filter View Controller-->
+        <scene sceneID="cHl-5O-mUo">
+            <objects>
+                <viewController id="gMu-35-RIQ" customClass="FilterViewController" customModule="ZohoSearchKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AOv-xh-fHG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YVw-FV-4AO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view tag="321" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUx-U0-oOa">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFe-oF-dnx">
+                                                <rect key="frame" x="5" y="12.5" width="73" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Filters" image="searchsdk-back"/>
+                                                <connections>
+                                                    <action selector="didBackButtonPressed:" destination="gMu-35-RIQ" eventType="touchUpInside" id="mKj-Iw-sHS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClK-ok-VxW">
+                                                <rect key="frame" x="162.5" y="12.5" width="50" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Reset"/>
+                                                <connections>
+                                                    <action selector="reSetToDefault:" destination="gMu-35-RIQ" eventType="touchUpInside" id="Cfa-jd-bJM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kw4-Zd-WKh">
+                                                <rect key="frame" x="292" y="12.5" width="73" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Apply "/>
+                                                <connections>
+                                                    <action selector="didFilterButtonTapped:" destination="gMu-35-RIQ" eventType="touchUpInside" id="mTk-xS-Plw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="KFe-oF-dnx" secondAttribute="bottom" constant="12.5" id="2ko-fB-33g"/>
+                                            <constraint firstItem="kw4-Zd-WKh" firstAttribute="width" secondItem="KFe-oF-dnx" secondAttribute="width" id="6TN-T0-WrY"/>
+                                            <constraint firstItem="ClK-ok-VxW" firstAttribute="centerY" secondItem="AUx-U0-oOa" secondAttribute="centerY" id="ITN-kr-fGH"/>
+                                            <constraint firstAttribute="trailing" secondItem="kw4-Zd-WKh" secondAttribute="trailing" constant="10" id="JXi-Ck-03J"/>
+                                            <constraint firstItem="kw4-Zd-WKh" firstAttribute="top" secondItem="KFe-oF-dnx" secondAttribute="top" id="LkL-Qd-MHu"/>
+                                            <constraint firstItem="KFe-oF-dnx" firstAttribute="leading" secondItem="AUx-U0-oOa" secondAttribute="leading" constant="5" id="Lrv-ng-QMh"/>
+                                            <constraint firstItem="KFe-oF-dnx" firstAttribute="top" secondItem="AUx-U0-oOa" secondAttribute="top" constant="12.5" id="Qsk-GY-SQB"/>
+                                            <constraint firstAttribute="height" constant="60" id="Y21-DY-0fb"/>
+                                            <constraint firstItem="kw4-Zd-WKh" firstAttribute="height" secondItem="KFe-oF-dnx" secondAttribute="height" id="aAM-Ve-Gyc"/>
+                                            <constraint firstItem="ClK-ok-VxW" firstAttribute="top" secondItem="KFe-oF-dnx" secondAttribute="top" id="f3E-N6-Jwy"/>
+                                            <constraint firstItem="ClK-ok-VxW" firstAttribute="height" secondItem="KFe-oF-dnx" secondAttribute="height" id="fMS-VR-Ccd"/>
+                                            <constraint firstItem="ClK-ok-VxW" firstAttribute="centerX" secondItem="AUx-U0-oOa" secondAttribute="centerX" id="tS5-4U-xOm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55i-7T-8MX" userLabel="Line">
+                                        <rect key="frame" x="0.0" y="60" width="375" height="1"/>
+                                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="WZe-DX-wxX"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vrz-Jj-HFq">
+                                        <rect key="frame" x="0.0" y="61" width="375" height="586"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YVw-FV-4AO" firstAttribute="leading" secondItem="Wek-ay-hUb" secondAttribute="leading" id="J5b-fS-Zni"/>
+                            <constraint firstAttribute="trailing" secondItem="YVw-FV-4AO" secondAttribute="trailing" id="eS9-g4-D2g"/>
+                            <constraint firstAttribute="bottom" secondItem="YVw-FV-4AO" secondAttribute="bottom" id="gwC-Pq-zXg"/>
+                            <constraint firstItem="YVw-FV-4AO" firstAttribute="top" secondItem="Wek-ay-hUb" secondAttribute="top" id="q36-Pi-Nri"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wek-ay-hUb"/>
+                    </view>
+                    <connections>
+                        <outlet property="applyButton" destination="kw4-Zd-WKh" id="HI6-SK-z51"/>
+                        <outlet property="backButton" destination="KFe-oF-dnx" id="R8d-0K-DaA"/>
+                        <outlet property="filterVCNavigationBarView" destination="AUx-U0-oOa" id="6V1-l4-wH4"/>
+                        <outlet property="resetButton" destination="ClK-ok-VxW" id="7i2-3T-RoT"/>
+                        <outlet property="tableView" destination="Vrz-Jj-HFq" id="cz4-nb-ScO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ypi-7q-1Sp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149.59999999999999" y="151.57421289355324"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="searchsdk-back" width="20" height="20"/>
+    </resources>
+</document>

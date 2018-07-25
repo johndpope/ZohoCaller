@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="M2R-A9-Uez" customClass="PeopleResultViewCell" customModule="ZohoSearchKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="603" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M2R-A9-Uez" id="94d-dZ-bIu">
+                <rect key="frame" x="0.0" y="0.0" width="603" height="120.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gjl-dX-t9i" userLabel="Cell Stack View">
+                        <rect key="frame" x="5" y="8" width="593" height="104.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ChD-7P-704">
+                                <rect key="frame" x="0.0" y="22.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ChD-7P-704" secondAttribute="height" multiplier="1:1" identifier="peopleres_image_aspect" id="Dlh-NL-6jS"/>
+                                    <constraint firstAttribute="height" constant="60" identifier="peopleres_image_height" id="tbm-zD-biH"/>
+                                    <constraint firstAttribute="width" constant="60" identifier="peopleres_image_width" id="yxF-0X-OWZ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2qO-wf-qVe" userLabel="Rows Stack View">
+                                <rect key="frame" x="65" y="28" width="528" height="49"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="H7s-1h-Olk" userLabel="First Row Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="528" height="21.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH1-iW-Asm">
+                                                <rect key="frame" x="0.0" y="0.0" width="528" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XFG-Ru-ICV" userLabel="Second Row Stack View">
+                                        <rect key="frame" x="0.0" y="29.5" width="528" height="19.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="730" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGh-KK-6Yf">
+                                                <rect key="frame" x="0.0" y="0.0" width="449.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extension" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwW-bU-8yB">
+                                                <rect key="frame" x="457.5" y="0.0" width="70.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="BwW-bU-8yB" secondAttribute="trailing" identifier="peopleres_extn_trailing" id="dLh-VD-0WS"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gjl-dX-t9i" firstAttribute="leading" secondItem="94d-dZ-bIu" secondAttribute="leading" constant="5" identifier="peopleres_leading" id="N05-Hl-u9F"/>
+                    <constraint firstAttribute="bottom" secondItem="gjl-dX-t9i" secondAttribute="bottom" constant="8" identifier="peopleres_bottom" id="iRm-1s-m0G"/>
+                    <constraint firstItem="gjl-dX-t9i" firstAttribute="top" secondItem="94d-dZ-bIu" secondAttribute="top" constant="8" identifier="peopleres_top" id="nx9-Jt-tbT"/>
+                    <constraint firstAttribute="trailing" secondItem="gjl-dX-t9i" secondAttribute="trailing" constant="5" identifier="peopleres_trailing" id="v78-dF-x6b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="SSR-V1-cjG"/>
+            <connections>
+                <outlet property="email" destination="aGh-KK-6Yf" id="QcN-C4-8wC"/>
+                <outlet property="empName" destination="RH1-iW-Asm" id="tOr-du-Uig"/>
+                <outlet property="extnNumber" destination="BwW-bU-8yB" id="Iok-gG-6e6"/>
+                <outlet property="resultImageView" destination="ChD-7P-704" id="npo-9n-dUb"/>
+            </connections>
+            <point key="canvasLocation" x="-8.5" y="0.5"/>
+        </tableViewCell>
+    </objects>
+</document>

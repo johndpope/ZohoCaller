@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="KsX-t7-Fkw" customClass="FilterVCListViewTitleWithSearchBar" customModule="ZohoSearchKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KsX-t7-Fkw" id="3g2-W1-l0B">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wQo-2M-2tc">
+                        <rect key="frame" x="0.0" y="0.0" width="356" height="150"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j7W-Ft-jsf" userLabel="TitleView">
+                                <rect key="frame" x="0.0" y="0.0" width="356" height="49"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pqa-k8-4QT">
+                                        <rect key="frame" x="12" y="0.0" width="332" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXG-JX-izo">
+                                                <rect key="frame" x="0.0" y="0.0" width="272" height="49"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="kDa-8i-bzL">
+                                                <rect key="frame" x="272" y="0.0" width="60" height="49"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="YfE-u7-0yA"/>
+                                                </constraints>
+                                            </activityIndicatorView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="bPM-eY-2ch"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pqa-k8-4QT" secondAttribute="trailing" constant="12" id="hG5-lu-93D"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pqa-k8-4QT" secondAttribute="bottom" id="kf6-Dp-iUN"/>
+                                    <constraint firstItem="Pqa-k8-4QT" firstAttribute="top" secondItem="j7W-Ft-jsf" secondAttribute="top" id="mmJ-0d-vja"/>
+                                    <constraint firstItem="Pqa-k8-4QT" firstAttribute="leading" secondItem="j7W-Ft-jsf" secondAttribute="leading" constant="12" id="mwQ-GM-Ub6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqP-K3-ldq">
+                                <rect key="frame" x="0.0" y="49" width="356" height="1"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="dNT-4G-UmM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BkB-Fb-lkc" userLabel="SelectedFilterView">
+                                <rect key="frame" x="0.0" y="50" width="356" height="49"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXg-6i-bKF" customClass="filterSelectionView">
+                                        <rect key="frame" x="30" y="0.0" width="326" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SelectedFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg6-BT-EvV">
+                                                <rect key="frame" x="0.0" y="0.0" width="277" height="49"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Vp-5e-eLC">
+                                                <rect key="frame" x="277" y="0.0" width="49" height="49"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="49" id="AAh-Kv-QW3"/>
+                                                    <constraint firstAttribute="width" constant="49" id="JOc-27-G0T"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nXg-6i-bKF" firstAttribute="leading" secondItem="BkB-Fb-lkc" secondAttribute="leading" constant="30" id="a7E-IH-5za"/>
+                                    <constraint firstAttribute="height" constant="49" id="i4t-tA-pHF"/>
+                                    <constraint firstItem="nXg-6i-bKF" firstAttribute="top" secondItem="BkB-Fb-lkc" secondAttribute="top" id="jq2-gQ-M9A"/>
+                                    <constraint firstAttribute="trailing" secondItem="nXg-6i-bKF" secondAttribute="trailing" id="juR-7x-0Vs"/>
+                                    <constraint firstAttribute="bottom" secondItem="nXg-6i-bKF" secondAttribute="bottom" id="xuc-FY-Brk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAo-Qm-7HW" userLabel="Line">
+                                <rect key="frame" x="0.0" y="99" width="356" height="1"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="4pc-7H-0Rr"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Htt-aJ-jnQ" userLabel="SearchbarView">
+                                <rect key="frame" x="0.0" y="100" width="356" height="49"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4i-97-drJ">
+                                        <rect key="frame" x="18" y="2" width="338" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaY-mJ-etO">
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="47"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="GaY-mJ-etO" secondAttribute="height" multiplier="1:1" id="VJY-Vy-ye1"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                <state key="normal" title="Button" image="searchsdk-filter-search"/>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search Filters" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="haw-pD-Ic8" customClass="FilterSearchBar" customModule="ZohoSearchKit" customModuleProvider="target">
+                                                <rect key="frame" x="47" y="0.0" width="291" height="47"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="M4i-97-drJ" firstAttribute="leading" secondItem="Htt-aJ-jnQ" secondAttribute="leading" constant="18" id="C9D-7k-sf7"/>
+                                    <constraint firstAttribute="trailing" secondItem="M4i-97-drJ" secondAttribute="trailing" id="CNd-cS-lxf"/>
+                                    <constraint firstItem="M4i-97-drJ" firstAttribute="top" secondItem="Htt-aJ-jnQ" secondAttribute="top" constant="2" id="GNh-FT-HbS"/>
+                                    <constraint firstAttribute="height" constant="49" id="VQW-9O-lAu"/>
+                                    <constraint firstAttribute="bottom" secondItem="M4i-97-drJ" secondAttribute="bottom" id="cgo-1N-WCz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDF-Gz-CJc">
+                                <rect key="frame" x="0.0" y="149" width="356" height="1"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="xBh-hG-Cmw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="gO0-Lz-aLX"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wQo-2M-2tc" secondAttribute="trailing" id="BL6-1y-OI1"/>
+                    <constraint firstAttribute="bottom" secondItem="wQo-2M-2tc" secondAttribute="bottom" id="QpM-rG-oXb"/>
+                    <constraint firstItem="wQo-2M-2tc" firstAttribute="leading" secondItem="3g2-W1-l0B" secondAttribute="leading" id="jAj-3P-rI6"/>
+                    <constraint firstItem="wQo-2M-2tc" firstAttribute="top" secondItem="3g2-W1-l0B" secondAttribute="top" id="ql6-zc-ue7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="HaR-vl-Uq0"/>
+            <connections>
+                <outlet property="SearchBarView" destination="Htt-aJ-jnQ" id="wnk-OX-fzm"/>
+                <outlet property="activityIndicator" destination="kDa-8i-bzL" id="xah-1D-FcI"/>
+                <outlet property="dropAndUpArrowImage" destination="9Vp-5e-eLC" id="o7g-gx-tIB"/>
+                <outlet property="searchBar" destination="haw-pD-Ic8" id="uKg-fj-2sj"/>
+                <outlet property="sectionTitle" destination="HXG-JX-izo" id="fgJ-ZL-Z4i"/>
+                <outlet property="selectedFilterName" destination="Gg6-BT-EvV" id="8gD-eX-qcm"/>
+                <outlet property="selectedFilterView" destination="BkB-Fb-lkc" id="GLL-pc-lPN"/>
+                <outlet property="titleHeaderView" destination="j7W-Ft-jsf" id="y8A-66-H9I"/>
+            </connections>
+            <point key="canvasLocation" x="-106" y="-304"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="searchsdk-filter-search" width="40" height="40"/>
+    </resources>
+</document>

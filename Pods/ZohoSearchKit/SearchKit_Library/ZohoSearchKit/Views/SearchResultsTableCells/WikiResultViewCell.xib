@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="tbX-0a-cix" customClass="WikiResultViewCell" customModule="ZohoSearchKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="587" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tbX-0a-cix" id="Pfy-d9-1gJ">
+                <rect key="frame" x="0.0" y="0.0" width="587" height="100.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ec2-dX-WYl" userLabel="Cell Stack View">
+                        <rect key="frame" x="5" y="8" width="577" height="84.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Syx-4c-Dhg">
+                                <rect key="frame" x="0.0" y="12.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" identifier="wikires_image_height" id="aos-VR-QxU"/>
+                                    <constraint firstAttribute="width" constant="60" identifier="wikires_image_width" id="fMY-X8-V9Y"/>
+                                    <constraint firstAttribute="width" secondItem="Syx-4c-Dhg" secondAttribute="height" multiplier="1:1" identifier="wikires_image_aspect" id="k0e-fh-FRR"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="337-Jq-c4H" userLabel="Rows Stack View">
+                                <rect key="frame" x="65" y="18" width="512" height="49"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ipa-gJ-e2W" userLabel="First Row Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="512" height="21.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="730" text="Wiki Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7e-u2-9z7">
+                                                <rect key="frame" x="0.0" y="0.0" width="468" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8H8-Rd-kfk">
+                                                <rect key="frame" x="476" y="1" width="36" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="8H8-Rd-kfk" secondAttribute="trailing" identifier="wikires_lmtime_trailing" id="dEU-ZV-Hpl"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NnY-fS-9VT" userLabel="Second Row Stack View">
+                                        <rect key="frame" x="0.0" y="29.5" width="512" height="19.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epS-ts-k0V">
+                                                <rect key="frame" x="0.0" y="0.0" width="512" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Ec2-dX-WYl" secondAttribute="trailing" constant="5" identifier="wikires_trailing" id="0Lf-gi-tDX"/>
+                    <constraint firstItem="Ec2-dX-WYl" firstAttribute="top" secondItem="Pfy-d9-1gJ" secondAttribute="top" constant="8" identifier="wikires_top" id="2Nw-jx-bzH"/>
+                    <constraint firstItem="Ec2-dX-WYl" firstAttribute="leading" secondItem="Pfy-d9-1gJ" secondAttribute="leading" constant="5" identifier="wikires_leading" id="h61-8K-WUV"/>
+                    <constraint firstAttribute="bottom" secondItem="Ec2-dX-WYl" secondAttribute="bottom" constant="8" identifier="wikires_bottom" id="t3O-sE-nMF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="9aS-FV-xUG"/>
+            <connections>
+                <outlet property="lastModifiedTime" destination="8H8-Rd-kfk" id="j9h-v2-JJR"/>
+                <outlet property="resultImageView" destination="Syx-4c-Dhg" id="IW0-Vg-Odo"/>
+                <outlet property="wikiAuthor" destination="epS-ts-k0V" id="9G4-XW-gan"/>
+                <outlet property="wikiName" destination="G7e-u2-9z7" id="4P9-de-DdW"/>
+            </connections>
+            <point key="canvasLocation" x="82.5" y="30.5"/>
+        </tableViewCell>
+    </objects>
+</document>

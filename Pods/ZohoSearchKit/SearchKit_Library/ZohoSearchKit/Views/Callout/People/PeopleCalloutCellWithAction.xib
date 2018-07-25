@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="127" id="ULo-LU-bw7" customClass="PeopleCalloutCellWithAction" customModule="ZohoSearchKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ULo-LU-bw7" id="SeA-1k-pW5">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="126.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="04B-lt-HOX">
+                        <rect key="frame" x="16" y="10" width="397" height="106.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="240" horizontalCompressionResistancePriority="740" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yZg-rf-T4k">
+                                <rect key="frame" x="0.0" y="29" width="82" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDy-Hd-VH5">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Text" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMb-Mm-Sfg">
+                                        <rect key="frame" x="0.0" y="28.5" width="82" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="cmj-AG-oHQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LMb-Mm-Sfg" firstAttribute="top" secondItem="gDy-Hd-VH5" secondAttribute="bottom" constant="8" id="0EL-Fr-AZV"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeG-Ib-YzJ">
+                                <rect key="frame" x="367" y="38.5" width="30" height="30"/>
+                                <connections>
+                                    <action selector="actionButtonPressed:" destination="ULo-LU-bw7" eventType="touchUpInside" id="IN2-K2-bqh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="04B-lt-HOX" firstAttribute="leading" secondItem="SeA-1k-pW5" secondAttribute="leading" constant="16" id="dxt-xE-mhP"/>
+                    <constraint firstAttribute="bottom" secondItem="04B-lt-HOX" secondAttribute="bottom" constant="10" id="jTu-P7-8jz"/>
+                    <constraint firstAttribute="trailing" secondItem="04B-lt-HOX" secondAttribute="trailing" constant="16" id="jeY-Zl-CFz"/>
+                    <constraint firstItem="04B-lt-HOX" firstAttribute="top" secondItem="SeA-1k-pW5" secondAttribute="top" constant="10" id="leC-EO-hlG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="2wm-x2-A2R"/>
+            <connections>
+                <outlet property="actionButton" destination="ZeG-Ib-YzJ" id="Fn0-XI-DPX"/>
+                <outlet property="fieldDataLabel" destination="LMb-Mm-Sfg" id="UvZ-O5-P0S"/>
+                <outlet property="fieldLabel" destination="gDy-Hd-VH5" id="lyS-av-YLS"/>
+                <outlet property="labelGap" destination="0EL-Fr-AZV" id="TxK-fH-Blk"/>
+            </connections>
+            <point key="canvasLocation" x="-52" y="35"/>
+        </tableViewCell>
+    </objects>
+</document>

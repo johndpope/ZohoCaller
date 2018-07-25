@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pww-wp-8No">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search History View Controller-->
+        <scene sceneID="MdO-eo-p9N">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="pww-wp-8No" customClass="SearchHistoryViewController" customModule="ZohoSearchKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HKl-k8-Xzw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cnh-pj-hcf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cnh-pj-hcf" firstAttribute="top" secondItem="aZE-Fp-MK3" secondAttribute="top" id="1bm-Kd-Meg"/>
+                            <constraint firstItem="Cnh-pj-hcf" firstAttribute="bottom" secondItem="aZE-Fp-MK3" secondAttribute="bottom" id="Ds5-Kn-7xP"/>
+                            <constraint firstItem="Cnh-pj-hcf" firstAttribute="trailing" secondItem="aZE-Fp-MK3" secondAttribute="trailing" id="HRf-2f-iVL"/>
+                            <constraint firstItem="Cnh-pj-hcf" firstAttribute="leading" secondItem="aZE-Fp-MK3" secondAttribute="leading" id="acD-dT-5t5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aZE-Fp-MK3"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="knK-rf-P1Y" id="XsX-qU-hTI"/>
+                        <outlet property="tableView" destination="Cnh-pj-hcf" id="9qf-Z7-8XU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ci2-q3-TBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="knK-rf-P1Y">
+                    <connections>
+                        <outlet property="delegate" destination="pww-wp-8No" id="9AQ-nX-p3E"/>
+                        <outlet property="searchContentsController" destination="pww-wp-8No" id="SVw-5x-y1V"/>
+                        <outlet property="searchResultsDataSource" destination="pww-wp-8No" id="tMO-fs-9AO"/>
+                        <outlet property="searchResultsDelegate" destination="pww-wp-8No" id="kob-k2-LH1"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="108.39580209895054"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module ZohoSearchKit {
+  umbrella header "ZohoSearchKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

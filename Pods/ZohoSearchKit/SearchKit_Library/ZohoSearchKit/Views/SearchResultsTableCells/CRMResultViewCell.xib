@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="mau-MK-cvo" customClass="CRMResultViewCell" customModule="ZohoSearchKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="602" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mau-MK-cvo" id="CuS-A4-y4x">
+                <rect key="frame" x="0.0" y="0.0" width="602" height="103.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DCb-bf-hEL" userLabel="Cell Stack View">
+                        <rect key="frame" x="5" y="8" width="592" height="87.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B99-rt-a56">
+                                <rect key="frame" x="0.0" y="14" width="60" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yh9-it-HRZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Yh9-it-HRZ" secondAttribute="height" multiplier="1:1" identifier="crmres_image_aspect" id="9zD-Y5-HGM"/>
+                                            <constraint firstAttribute="height" constant="60" identifier="crmres_image_height" id="fcA-cv-o9D"/>
+                                            <constraint firstAttribute="width" constant="60" identifier="crmres_image_width" id="sXk-lj-0Hw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Icon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXI-4j-XJC">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" identifier="crmres_texticon_height" id="Pal-PN-axo"/>
+                                            <constraint firstAttribute="width" constant="60" identifier="crmres_texticon_width" id="XLs-em-LO5"/>
+                                            <constraint firstAttribute="width" secondItem="yXI-4j-XJC" secondAttribute="height" multiplier="1:1" identifier="crmres_texticon_aspect" id="dcf-im-RDq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yXI-4j-XJC" firstAttribute="leading" secondItem="B99-rt-a56" secondAttribute="leading" identifier="crmres_iconview_5" id="1jh-8y-QiM"/>
+                                    <constraint firstItem="Yh9-it-HRZ" firstAttribute="leading" secondItem="B99-rt-a56" secondAttribute="leading" identifier="crmres_iconview_1" id="84c-1M-Bhl"/>
+                                    <constraint firstAttribute="width" constant="60" identifier="crmres_iconview_width" id="ERc-o8-dJh"/>
+                                    <constraint firstAttribute="trailing" secondItem="yXI-4j-XJC" secondAttribute="trailing" identifier="crmres_iconview_6" id="Gmp-Q6-aGs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yh9-it-HRZ" secondAttribute="bottom" identifier="crmres_iconview_2" id="IaD-Z8-zgP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yh9-it-HRZ" secondAttribute="trailing" identifier="crmres_iconview_3" id="POA-uW-HTs"/>
+                                    <constraint firstAttribute="height" constant="60" identifier="crmres_iconview_height" id="gdW-LC-hDX"/>
+                                    <constraint firstItem="Yh9-it-HRZ" firstAttribute="top" secondItem="B99-rt-a56" secondAttribute="top" identifier="crmres_iconview_4" id="ip6-71-5Rv"/>
+                                    <constraint firstItem="yXI-4j-XJC" firstAttribute="top" secondItem="B99-rt-a56" secondAttribute="top" identifier="crmres_iconview_7" id="weR-wn-iVs"/>
+                                    <constraint firstAttribute="bottom" secondItem="yXI-4j-XJC" secondAttribute="bottom" identifier="crmres_iconview_8" id="wx0-im-eT0"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vAY-6I-nGn" userLabel="Rows Stack View">
+                                <rect key="frame" x="65" y="19.5" width="527" height="49"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5AN-d5-5lU" userLabel="First Row Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="527" height="21.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOf-DK-f94">
+                                                <rect key="frame" x="0.0" y="0.0" width="527" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QQU-VI-SeU" userLabel="Second Row Stack View">
+                                        <rect key="frame" x="0.0" y="29.5" width="527" height="19.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="740" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acm-lf-IBY">
+                                                <rect key="frame" x="0.0" y="0.0" width="465" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Module" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkO-er-Dyn" userLabel="Module">
+                                                <rect key="frame" x="473" y="0.0" width="54" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="BkO-er-Dyn" secondAttribute="trailing" identifier="crmres_module_trailing" id="bAm-q6-rTG"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DCb-bf-hEL" firstAttribute="leading" secondItem="CuS-A4-y4x" secondAttribute="leading" constant="5" identifier="crmres_leading" id="0ip-PZ-khf"/>
+                    <constraint firstAttribute="bottom" secondItem="DCb-bf-hEL" secondAttribute="bottom" constant="8" identifier="crmres_bottom" id="Q3a-AY-a3W"/>
+                    <constraint firstItem="DCb-bf-hEL" firstAttribute="top" secondItem="CuS-A4-y4x" secondAttribute="top" constant="8" identifier="crmres_top" id="QQX-Wt-boc"/>
+                    <constraint firstAttribute="trailing" secondItem="DCb-bf-hEL" secondAttribute="trailing" constant="5" identifier="crmres_trailing" id="Yuv-gv-aaq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="XLd-d7-oCe"/>
+            <connections>
+                <outlet property="moduleNameLabel" destination="BkO-er-Dyn" id="Hk5-gD-HuV"/>
+                <outlet property="resultImageView" destination="Yh9-it-HRZ" id="97c-wk-m7E"/>
+                <outlet property="resultSubtitle" destination="acm-lf-IBY" id="TQz-TP-Kgn"/>
+                <outlet property="resultTitle" destination="SOf-DK-f94" id="uoQ-Fb-Td2"/>
+                <outlet property="textIconForModule" destination="yXI-4j-XJC" id="KS5-G8-os7"/>
+            </connections>
+            <point key="canvasLocation" x="63" y="19"/>
+        </tableViewCell>
+    </objects>
+</document>

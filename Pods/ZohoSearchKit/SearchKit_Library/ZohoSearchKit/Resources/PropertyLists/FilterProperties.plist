@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>searchsdk_doc_filter_types</key>
+	<array>
+		<string>All Types</string>
+		<string>Documents</string>
+		<string>Spreadsheets</string>
+		<string>Presentations</string>
+		<string>Pdf</string>
+		<string>Pictures</string>
+		<string>Music</string>
+		<string>Videos</string>
+		<string>Zip</string>
+	</array>
+	<key>searchsdk_doc_filter_files</key>
+	<array>
+		<string>All files</string>
+		<string>Owned by Me</string>
+		<string>Shared with Me</string>
+		<string>Shared by Me</string>
+	</array>
+	<key>searchsdk_crm_app_supported_modules</key>
+	<array>
+		<string>leads</string>
+		<string>accounts</string>
+		<string>contacts</string>
+		<string>potentials</string>
+		<string>solutions</string>
+		<string>tasks</string>
+		<string>events</string>
+		<string>calls</string>
+		<string>cases</string>
+	</array>
+	<key>searchsdk_mail_filter</key>
+	<array>
+		<string>Entire Message</string>
+		<string>Subject</string>
+		<string>Email Content</string>
+		<string>Attachment name</string>
+		<string>Attachment Content</string>
+	</array>
+	<key>searchsdk_sort_by</key>
+	<array>
+		<string>Sort by Time</string>
+		<string>Sort by Relevance</string>
+	</array>
+	<key>searchsdk_connect_department</key>
+	<array>
+		<string>Feeds</string>
+		<string>Forums</string>
+	</array>
+	<key>searchkit.filters.daterange</key>
+	<array>
+		<string>All days</string>
+		<string>Today</string>
+		<string>Yesterday</string>
+		<string>Last 7 days</string>
+		<string>This month</string>
+		<string>This year</string>
+		<string>Specific date</string>
+		<string>Custom range</string>
+	</array>
+	<key>searchsdk_supported_desk_modules</key>
+	<array>
+		<string>0</string>
+		<string>1</string>
+		<string>2</string>
+		<string>3</string>
+		<string>4</string>
+	</array>
+	<key>cliq</key>
+	<dict>
+		<key>searchkit.filters.daterange</key>
+		<array>
+			<string>alldays</string>
+			<string>today</string>
+			<string>yesterday</string>
+			<string>last7days</string>
+			<string>thismonth</string>
+			<string>thisyear</string>
+			<string>specificdate</string>
+			<string>customdate</string>
+		</array>
+		<key>searchkit.filters.sort</key>
+		<array>
+			<string>sorttime</string>
+			<string>sortrelv</string>
+		</array>
+	</dict>
+	<key>mail</key>
+	<dict>
+		<key>searchkit.filters.mail.account.emailId</key>
+		<array/>
+		<key>searchkit.filters.mail.folder.folderId</key>
+		<array>
+			<string>allfolders</string>
+		</array>
+		<key>searchkit.filters.mail.searchin</key>
+		<array>
+			<string>entire</string>
+			<string>subject</string>
+			<string>content</string>
+			<string>attname</string>
+			<string>attcontent</string>
+		</array>
+		<key>searchkit.filters.daterange</key>
+		<array>
+			<string>alldays</string>
+			<string>today</string>
+			<string>yesterday</string>
+			<string>last7days</string>
+			<string>thismonth</string>
+			<string>thisyear</string>
+			<string>specificdate</string>
+			<string>customdate</string>
+		</array>
+		<key>searchkit.filters.mail.tags.labelId</key>
+		<array>
+			<string>alltags</string>
+		</array>
+		<key>searchkit.filters.mail.checkList.hasAtt</key>
+		<false/>
+		<key>searchkit.filters.mail.checkList.hasFlg</key>
+		<false/>
+		<key>searchkit.filters.mail.checkList.hasResp</key>
+		<false/>
+	</dict>
+	<key>connect</key>
+	<dict>
+		<key>searchkit.filters.daterange</key>
+		<array>
+			<string>alldays</string>
+			<string>today</string>
+			<string>yesterday</string>
+			<string>last7days</string>
+			<string>thismonth</string>
+			<string>thisyear</string>
+			<string>specificdate</string>
+			<string>customdate</string>
+		</array>
+		<key>searchkit.filters.sort</key>
+		<array>
+			<string>sorttime</string>
+			<string>sortrelv</string>
+		</array>
+		<key>searchkit.filters.connect.portals.connectId</key>
+		<array/>
+		<key>searchkit.filters.connect.searchin</key>
+		<array>
+			<string>feeds</string>
+			<string>forums</string>
+		</array>
+	</dict>
+	<key>docs</key>
+	<dict>
+		<key>searchkit.filters.docs.ownerType</key>
+		<array>
+			<string>allfiles</string>
+			<string>mydocs</string>
+			<string>sharedtome</string>
+			<string>sharedbyme</string>
+		</array>
+		<key>searchkit.filters.docs.searchin</key>
+		<array>
+			<string>alltypes</string>
+			<string>writer</string>
+			<string>sheet</string>
+			<string>show</string>
+			<string>pdf</string>
+			<string>image</string>
+			<string>music</string>
+			<string>video</string>
+			<string>zip</string>
+		</array>
+		<key>searchkit.filters.sort</key>
+		<array>
+			<string>sorttime</string>
+			<string>sortrelv</string>
+		</array>
+	</dict>
+	<key>crm</key>
+	<dict>
+		<key>searchkit.filters.crm.moduleName</key>
+		<array>
+			<string>all_crm_mod</string>
+		</array>
+	</dict>
+	<key>desk</key>
+	<dict>
+		<key>searchkit.filters.desk.portalId</key>
+		<array/>
+		<key>searchkit.filters.desk.deptId</key>
+		<array/>
+		<key>searchkit.filters.desk.moduleId</key>
+		<array>
+			<string>0</string>
+		</array>
+		<key>searchkit.filters.sort</key>
+		<array>
+			<string>sorttime</string>
+			<string>sortrelv</string>
+		</array>
+	</dict>
+	<key>wiki</key>
+	<dict>
+		<key>searchkit.filters.wiki.wikitype</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+		</array>
+		<key>searchkit.filters.wiki.wikiId</key>
+		<array/>
+		<key>searchkit.filters.sort</key>
+		<array>
+			<string>sorttime</string>
+			<string>sortrelv</string>
+		</array>
+		<key>searchkit.filters.daterange</key>
+		<array>
+			<string>alldays</string>
+			<string>today</string>
+			<string>yesterday</string>
+			<string>last7days</string>
+			<string>thismonth</string>
+			<string>thisyear</string>
+			<string>specificdate</string>
+			<string>customdate</string>
+		</array>
+	</dict>
+</dict>
+</plist>

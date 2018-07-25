@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>zohocrm</string>
+		<string>zohocrm3.0</string>
+		<string>zohoprojects</string>
+		<string>zohosupport</string>
+		<string>zohomail</string>
+		<string>zohoreports</string>
+		<string>zohoconnect</string>
+		<string>zohonotebook</string>
+		<string>zohopeople1</string>
+		<string>zohoDocs</string>
+		<string>zohochat</string>
+		<string>zohowriter</string>
+		<string>zohoshow</string>
+		<string>zohosheet</string>
+	</array>
+	<key>NSPrincipalClass</key>
+	<string></string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Your speech will be detected after tapping the start button</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>speak to search across Zoho </string>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>app-icon</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Quick Search</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.zoho.search.quicksearch</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>voice-search</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Voice Search</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.zoho.search.voicesearch</string>
+		</dict>
+	</array>
+</dict>
+</plist>

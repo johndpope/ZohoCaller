@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mau-YJ-10S">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voice SearchVC-->
+        <scene sceneID="pQJ-a8-OeP">
+            <objects>
+                <viewController id="Mau-YJ-10S" customClass="ZOSVoiceSearchVC" customModule="ZohoSearchKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XWo-bL-9z6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w14-e6-sxO">
+                                <rect key="frame" x="341" y="30" width="24" height="24"/>
+                                <state key="normal" image="searchsdk-close"/>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="Mau-YJ-10S" eventType="touchUpInside" id="jpk-3f-TeC"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5Z-wv-BJD" customClass="ZOSActivityIndicatorView" customModule="ZohoSearchKit" customModuleProvider="target">
+                                <rect key="frame" x="86" y="297" width="202" height="72"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="3dU-yX-NJW"/>
+                                    <constraint firstAttribute="width" constant="202" id="v36-JL-MTq"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="epR-AF-h5S">
+                                <rect key="frame" x="8" y="30" width="325" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d5Z-wv-BJD" firstAttribute="centerX" secondItem="XWo-bL-9z6" secondAttribute="centerX" id="Ce6-hE-LE3"/>
+                            <constraint firstItem="hhB-mU-PWz" firstAttribute="trailing" secondItem="w14-e6-sxO" secondAttribute="trailing" constant="10" id="HxQ-B6-N9n"/>
+                            <constraint firstItem="d5Z-wv-BJD" firstAttribute="centerY" secondItem="XWo-bL-9z6" secondAttribute="centerY" id="R2s-xm-nkZ"/>
+                            <constraint firstItem="w14-e6-sxO" firstAttribute="top" secondItem="hhB-mU-PWz" secondAttribute="top" constant="10" id="uoj-7T-DP4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hhB-mU-PWz"/>
+                    </view>
+                    <connections>
+                        <outlet property="ZOSActivityIndicator" destination="d5Z-wv-BJD" id="7gc-W0-pWW"/>
+                        <outlet property="closeButton" destination="w14-e6-sxO" id="rsX-h4-amO"/>
+                        <outlet property="textDisplay" destination="epR-AF-h5S" id="1BA-SE-ISp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bIr-MM-u6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="286.50674662668666"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="searchsdk-close" width="24" height="24"/>
+    </resources>
+</document>

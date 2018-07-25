@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="1JH-ui-P0e" customClass="DeskResultViewCell" customModule="ZohoSearchKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="596" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1JH-ui-P0e" id="EeG-8l-prw">
+                <rect key="frame" x="0.0" y="0.0" width="596" height="123.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="f6q-KY-gq9" userLabel="Cell Stack View">
+                        <rect key="frame" x="5" y="8" width="586" height="107.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nWd-No-nXd">
+                                <rect key="frame" x="0.0" y="24" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" identifier="deskres_image_height" id="As5-EX-oyl"/>
+                                    <constraint firstAttribute="width" constant="60" identifier="deskres_image_width" id="hXe-ao-fY4"/>
+                                    <constraint firstAttribute="width" secondItem="nWd-No-nXd" secondAttribute="height" multiplier="1:1" identifier="deskres_image_aspect" id="z2K-3a-q65"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UgC-st-p07" userLabel="Rows Stack View">
+                                <rect key="frame" x="65" y="29.5" width="521" height="49"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gTx-0f-Wr9" userLabel="First Row Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="521" height="21.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="730" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsq-DL-LZJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="477" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jza-SD-Hrm">
+                                                <rect key="frame" x="485" y="1" width="36" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="jza-SD-Hrm" secondAttribute="trailing" identifier="deskres_time_trailing" id="e82-0X-CMo"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eqa-Nb-QLM" userLabel="Second Row Stack View">
+                                        <rect key="frame" x="0.0" y="29.5" width="521" height="19.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="730" text="Subtitle One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJP-z2-1Bp">
+                                                <rect key="frame" x="0.0" y="0.0" width="423" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7S-p2-zO4">
+                                                <rect key="frame" x="431" y="0.0" width="90" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="V7S-p2-zO4" secondAttribute="trailing" identifier="deskres_subtwo_trailing" id="dca-wV-uZH"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="f6q-KY-gq9" firstAttribute="leading" secondItem="EeG-8l-prw" secondAttribute="leading" constant="5" identifier="deskres_leading" id="EUW-On-dGX"/>
+                    <constraint firstAttribute="bottom" secondItem="f6q-KY-gq9" secondAttribute="bottom" constant="8" identifier="deskres_bottom" id="InI-CE-1Fu"/>
+                    <constraint firstItem="f6q-KY-gq9" firstAttribute="top" secondItem="EeG-8l-prw" secondAttribute="top" constant="8" identifier="deskres_top" id="KhH-5I-af6"/>
+                    <constraint firstAttribute="trailing" secondItem="f6q-KY-gq9" secondAttribute="trailing" constant="5" identifier="deskres_trailing" id="vDO-B7-U1R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="fT4-rX-d6w"/>
+            <connections>
+                <outlet property="creationTime" destination="jza-SD-Hrm" id="ih6-JC-EUU"/>
+                <outlet property="deskTitle" destination="Nsq-DL-LZJ" id="Ij1-UZ-3Yd"/>
+                <outlet property="resultImageView" destination="nWd-No-nXd" id="vUv-qo-N8l"/>
+                <outlet property="subtitleOne" destination="CJP-z2-1Bp" id="TVc-kn-WiP"/>
+                <outlet property="subtitleTwo" destination="V7S-p2-zO4" id="JDV-BU-Jfl"/>
+            </connections>
+            <point key="canvasLocation" x="27" y="57"/>
+        </tableViewCell>
+    </objects>
+</document>

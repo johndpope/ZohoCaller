@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="DefaultServiceTableViewCell" customModule="ZohoSearchKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="439" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ud3-OI-n40">
+                        <rect key="frame" x="8" y="8" width="423" height="80.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BT4-wG-SGs" userLabel="ServiceIV">
+                                <rect key="frame" x="0.0" y="20.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mfm-kd-Bn9"/>
+                                    <constraint firstAttribute="width" constant="40" id="opP-AA-fFW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hw-D7-fHa" userLabel="ServiceName">
+                                <rect key="frame" x="48" y="30" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MKf-EK-OpG" userLabel="SelectedIV">
+                                <rect key="frame" x="383" y="20.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="7nP-5a-HQ9"/>
+                                    <constraint firstAttribute="height" constant="40" id="xxc-bt-IaW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MKf-EK-OpG" secondAttribute="trailing" id="Eu3-vk-yZq"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ud3-OI-n40" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="9wo-j6-PUd"/>
+                    <constraint firstAttribute="bottom" secondItem="Ud3-OI-n40" secondAttribute="bottom" constant="8" id="Qr1-HR-D3E"/>
+                    <constraint firstItem="Ud3-OI-n40" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="rjp-6m-t8y"/>
+                    <constraint firstAttribute="trailing" secondItem="Ud3-OI-n40" secondAttribute="trailing" constant="8" id="wBX-Zr-ase"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="selectedImageView" destination="MKf-EK-OpG" id="ahY-pt-Rj3"/>
+                <outlet property="serviceImageView" destination="BT4-wG-SGs" id="7jd-u0-Zwu"/>
+                <outlet property="serviceNameLabel" destination="2Hw-D7-fHa" id="FTp-sf-kz8"/>
+            </connections>
+            <point key="canvasLocation" x="-15.5" y="143.5"/>
+        </tableViewCell>
+    </objects>
+</document>

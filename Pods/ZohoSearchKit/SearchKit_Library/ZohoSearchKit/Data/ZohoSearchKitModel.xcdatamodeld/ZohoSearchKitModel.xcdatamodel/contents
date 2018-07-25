@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ConnectPortals" representedClassName="ConnectPortals" syncable="YES">
+        <attribute name="account_zuid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="is_default" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="portal_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="portal_name" attributeType="String" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="portal_id"/>
+                <constraint value="account_zuid"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="CRMModules" representedClassName="CRMModules" syncable="YES">
+        <attribute name="account_zuid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="module_display_name" attributeType="String" syncable="YES"/>
+        <attribute name="module_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="module_name" attributeType="String" syncable="YES"/>
+        <attribute name="module_query_name" optional="YES" attributeType="String" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="account_zuid"/>
+                <constraint value="module_id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="DeskDepartments" representedClassName="DeskDepartments" syncable="YES">
+        <attribute name="dept_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dept_name" attributeType="String" syncable="YES"/>
+        <attribute name="is_default" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="portal_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="portal_id"/>
+                <constraint value="dept_id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="DeskModules" representedClassName="DeskModules" syncable="YES">
+        <attribute name="module_id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="module_name" attributeType="String" syncable="YES"/>
+        <attribute name="portal_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="portal_id"/>
+                <constraint value="module_id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="DeskPortals" representedClassName="DeskPortals" syncable="YES">
+        <attribute name="account_zuid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="is_default" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="portal_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="portal_name" attributeType="String" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="account_zuid"/>
+                <constraint value="portal_id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="MailAccounts" representedClassName="MailAccounts" syncable="YES">
+        <attribute name="account_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="account_type" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="account_zuid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="display_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email_address" attributeType="String" syncable="YES"/>
+        <attribute name="is_default" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="account_id"/>
+                <constraint value="account_zuid"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="MailAcntFolders" representedClassName="MailAcntFolders" syncable="YES">
+        <attribute name="account_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="folder_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="folder_name" attributeType="String" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="account_id"/>
+                <constraint value="folder_id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="MailAcntTags" representedClassName="MailAcntTags" syncable="YES">
+        <attribute name="account_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tag_color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tag_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tag_name" optional="YES" attributeType="String" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="account_id"/>
+                <constraint value="tag_id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="SavedSearches" representedClassName="SavedSearches" syncable="YES">
+        <attribute name="account_zuid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lmtime" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="query_state_json" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saved_search_name" attributeType="String" syncable="YES"/>
+        <attribute name="service_name" attributeType="String" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="account_zuid"/>
+                <constraint value="saved_search_name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="SearchHistory" representedClassName="SearchHistory" syncable="YES">
+        <attribute name="account_zuid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mention_contact_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mention_zuid" attributeType="Integer 64" defaultValueString="-1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="result_count" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="search_query" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="search_type" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="UserAccounts" representedClassName=".UserAccounts" syncable="YES">
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="display_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" attributeType="String" syncable="YES"/>
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" attributeType="String" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timezone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zoid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="zuid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="zuid"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="UserApps" representedClassName=".UserApps" syncable="YES">
+        <attribute name="account_zuid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="display_name" attributeType="String" syncable="YES"/>
+        <attribute name="is_enabled" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="is_supported" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="service_name" attributeType="String" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="account_zuid"/>
+                <constraint value="service_name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="UserContacts" representedClassName="UserContacts" syncable="YES">
+        <attribute name="account_zuid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="contact_zuid" attributeType="Integer 64" defaultValueString="-1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="email_address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nick_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usage_count" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="account_zuid"/>
+                <constraint value="contact_zuid"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="UserWikis" representedClassName="UserWikis" syncable="YES">
+        <attribute name="account_zuid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="is_default" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="wiki_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="wiki_name" attributeType="String" syncable="YES"/>
+        <attribute name="wiki_type" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="account_zuid"/>
+                <constraint value="wiki_id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="ConnectPortals" positionX="-216" positionY="108" width="128" height="105"/>
+        <element name="CRMModules" positionX="-225" positionY="99" width="128" height="120"/>
+        <element name="DeskDepartments" positionX="-180" positionY="144" width="128" height="105"/>
+        <element name="DeskModules" positionX="-171" positionY="153" width="128" height="90"/>
+        <element name="DeskPortals" positionX="-189" positionY="135" width="128" height="105"/>
+        <element name="MailAccounts" positionX="-198" positionY="126" width="128" height="135"/>
+        <element name="MailAcntFolders" positionX="-198" positionY="126" width="128" height="90"/>
+        <element name="MailAcntTags" positionX="-216" positionY="117" width="128" height="105"/>
+        <element name="SavedSearches" positionX="-225" positionY="108" width="128" height="120"/>
+        <element name="SearchHistory" positionX="-225" positionY="54" width="128" height="150"/>
+        <element name="UserAccounts" positionX="-54" positionY="-9" width="128" height="195"/>
+        <element name="UserApps" positionX="-389" positionY="-9" width="128" height="120"/>
+        <element name="UserContacts" positionX="-216" positionY="63" width="128" height="150"/>
+        <element name="UserWikis" positionX="-207" positionY="117" width="128" height="120"/>
+    </elements>
+</model>

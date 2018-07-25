@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="Fae-ho-Hf2" customClass="ContactsResultViewCell" customModule="ZohoSearchKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="571" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fae-ho-Hf2" id="voy-j8-0ET">
+                <rect key="frame" x="0.0" y="0.0" width="571" height="113.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iTK-xO-tJ8" userLabel="Cell Stack View">
+                        <rect key="frame" x="5" y="8" width="561" height="97.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lpb-JR-HI6">
+                                <rect key="frame" x="0.0" y="19" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" identifier="contactsres_image_height" id="1FY-wF-Olz"/>
+                                    <constraint firstAttribute="width" secondItem="lpb-JR-HI6" secondAttribute="height" multiplier="1:1" identifier="contactsres_image_aspect" id="8d1-MN-lb6"/>
+                                    <constraint firstAttribute="width" constant="60" identifier="contactsres_image_width" id="qhz-Hu-o5A"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wwm-xe-2kj" userLabel="Rows Stack View">
+                                <rect key="frame" x="65" y="24.5" width="496" height="49"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="En2-tC-ebl" userLabel="First Row Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="496" height="21.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQT-Mo-KCE">
+                                                <rect key="frame" x="0.0" y="0.0" width="496" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kSe-yT-qg5" userLabel="Second Row Stack View">
+                                        <rect key="frame" x="0.0" y="29.5" width="496" height="19.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cH-KI-Vm4">
+                                                <rect key="frame" x="0.0" y="0.0" width="496" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="iTK-xO-tJ8" secondAttribute="bottom" constant="8" identifier="contactsres_bottom" id="89n-R1-EF0"/>
+                    <constraint firstItem="iTK-xO-tJ8" firstAttribute="leading" secondItem="voy-j8-0ET" secondAttribute="leading" constant="5" identifier="contactsres_leading" id="ANO-gk-N1I"/>
+                    <constraint firstAttribute="trailing" secondItem="iTK-xO-tJ8" secondAttribute="trailing" constant="5" identifier="contactsres_trailing" id="kYp-2U-BML"/>
+                    <constraint firstItem="iTK-xO-tJ8" firstAttribute="top" secondItem="voy-j8-0ET" secondAttribute="top" constant="8" identifier="contactsres_top" id="thC-KK-SdA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="E9l-KG-ZNW"/>
+            <connections>
+                <outlet property="contactEmail" destination="0cH-KI-Vm4" id="Qo0-AF-QSm"/>
+                <outlet property="contactName" destination="dQT-Mo-KCE" id="8BR-Mq-reg"/>
+                <outlet property="resultImageView" destination="lpb-JR-HI6" id="ZcS-2X-6Kj"/>
+            </connections>
+            <point key="canvasLocation" x="-13" y="138"/>
+        </tableViewCell>
+    </objects>
+</document>

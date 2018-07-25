@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SearchServerHost</key>
+	<string>search.zoho.com</string>
+	<key>ContactsServerHost</key>
+	<string>contacts.zoho.com</string>
+	<key>StatusBarDismissButtonColor</key>
+	<string>#B22222</string>
+	<key>ConnectPostTitleColor</key>
+	<string>#000000</string>
+	<key>ConnectPostTimeColor</key>
+	<string>#555555</string>
+	<key>ConnectPostAuthorColor</key>
+	<string>#555555</string>
+	<key>ConnectPostTitleFontSize</key>
+	<real>18</real>
+	<key>ConnectPostTimeFontSize</key>
+	<integer>16</integer>
+	<key>ConnectPostAuthorFontSize</key>
+	<integer>16</integer>
+	<key>UnsupportedServices</key>
+	<array>
+		<string>discussions</string>
+		<string>orgContacts</string>
+		<string>reports</string>
+	</array>
+	<key>SupportedDeskModules</key>
+	<array>
+		<string>1</string>
+		<string>2</string>
+		<string>3</string>
+		<string>4</string>
+	</array>
+	<key>DefaultServiceOrder</key>
+	<array>
+		<string>all</string>
+		<string>personalContacts</string>
+		<string>people</string>
+		<string>mails</string>
+		<string>chat</string>
+		<string>connect</string>
+		<string>documents</string>
+		<string>crm</string>
+		<string>support</string>
+		<string>wiki</string>
+	</array>
+</dict>
+</plist>

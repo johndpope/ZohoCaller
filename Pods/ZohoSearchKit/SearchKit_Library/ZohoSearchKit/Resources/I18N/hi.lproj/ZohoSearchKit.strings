@@ -1,0 +1,12 @@
+/* 
+  File.strings
+  ZohoSearchKit
+
+  Created by hemant kumar s. on 10/01/18.
+  Copyright © 2018 hemant kumar s. All rights reserved.
+*/
+
+/* Search result page messages */
+"searchkit.results.viewall" = "सभी को देखें";
+"searchkit.results.viewmore" = "और देखो";
+"searchkit.results.viewless" = "कम देखें";
