@@ -10,6 +10,7 @@
 		1BDE84B5210870CC00CA5BC7 /* ZohoCaller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDE84AB210870CC00CA5BC7 /* ZohoCaller.framework */; };
 		1BDE84BA210870CC00CA5BC7 /* ZohoCallerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE84B9210870CC00CA5BC7 /* ZohoCallerTests.swift */; };
 		1BDE84BC210870CC00CA5BC7 /* ZohoCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BDE84AE210870CC00CA5BC7 /* ZohoCaller.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BDE84C62108710E00CA5BC7 /* ZohoCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE84C52108710E00CA5BC7 /* ZohoCaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		1BDE84B4210870CC00CA5BC7 /* ZohoCallerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZohoCallerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BDE84B9210870CC00CA5BC7 /* ZohoCallerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZohoCallerTests.swift; sourceTree = "<group>"; };
 		1BDE84BB210870CC00CA5BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BDE84C52108710E00CA5BC7 /* ZohoCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZohoCaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				1BDE84AE210870CC00CA5BC7 /* ZohoCaller.h */,
+				1BDE84C52108710E00CA5BC7 /* ZohoCaller.swift */,
 				1BDE84AF210870CC00CA5BC7 /* Info.plist */,
 			);
 			path = ZohoCaller;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					1BDE84AA210870CC00CA5BC7 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 					1BDE84B3210870CC00CA5BC7 = {
 						CreatedOnToolsVersion = 9.4;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BDE84C62108710E00CA5BC7 /* ZohoCaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		1BDE84C0210870CC00CA5BC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.searchApp.mani.ZohoCaller;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		1BDE84C1210870CC00CA5BC7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		1BDE84C3210870CC00CA5BC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R3JCA5487X;
 				INFOPLIST_FILE = ZohoCallerTests/Info.plist;
@@ -407,6 +416,7 @@
 		1BDE84C4210870CC00CA5BC7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R3JCA5487X;
 				INFOPLIST_FILE = ZohoCallerTests/Info.plist;
