@@ -11,6 +11,9 @@
 		1BDE84BA210870CC00CA5BC7 /* ZohoCallerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE84B9210870CC00CA5BC7 /* ZohoCallerTests.swift */; };
 		1BDE84BC210870CC00CA5BC7 /* ZohoCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BDE84AE210870CC00CA5BC7 /* ZohoCaller.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1BDE84C62108710E00CA5BC7 /* ZohoCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE84C52108710E00CA5BC7 /* ZohoCaller.swift */; };
+		1BDE84C82108A2A500CA5BC7 /* ZohoCaller_Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BDE84C72108A2A500CA5BC7 /* ZohoCaller_Assets.xcassets */; };
+		5AAAB5A29D313515354DCF65 /* Pods_ZohoCaller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B3FB988F572268972800F80 /* Pods_ZohoCaller.framework */; };
+		EC2D01020D272688EB2918F5 /* Pods_ZohoCallerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C26AA869231A4FE4CE37D29 /* Pods_ZohoCallerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,13 @@
 		1BDE84B9210870CC00CA5BC7 /* ZohoCallerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZohoCallerTests.swift; sourceTree = "<group>"; };
 		1BDE84BB210870CC00CA5BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BDE84C52108710E00CA5BC7 /* ZohoCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZohoCaller.swift; sourceTree = "<group>"; };
+		1BDE84C72108A2A500CA5BC7 /* ZohoCaller_Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ZohoCaller_Assets.xcassets; sourceTree = "<group>"; };
+		3C58887154C1CF08788490D0 /* Pods-ZohoCallerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZohoCallerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZohoCallerTests/Pods-ZohoCallerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		52481C0C454B7894D8C9A541 /* Pods-ZohoCallerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZohoCallerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZohoCallerTests/Pods-ZohoCallerTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C26AA869231A4FE4CE37D29 /* Pods_ZohoCallerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZohoCallerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3FB988F572268972800F80 /* Pods_ZohoCaller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZohoCaller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3BC1935DB77EBF7C3097AF1 /* Pods-ZohoCaller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZohoCaller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZohoCaller/Pods-ZohoCaller.debug.xcconfig"; sourceTree = "<group>"; };
+		F41B18EFC0C8268EEE1B529B /* Pods-ZohoCaller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZohoCaller.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZohoCaller/Pods-ZohoCaller.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAAB5A29D313515354DCF65 /* Pods_ZohoCaller.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BDE84B5210870CC00CA5BC7 /* ZohoCaller.framework in Frameworks */,
+				EC2D01020D272688EB2918F5 /* Pods_ZohoCallerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +70,8 @@
 				1BDE84AD210870CC00CA5BC7 /* ZohoCaller */,
 				1BDE84B8210870CC00CA5BC7 /* ZohoCallerTests */,
 				1BDE84AC210870CC00CA5BC7 /* Products */,
+				8339E78255ECEA25925E2292 /* Pods */,
+				8F6B569FA2BF66CC79A617B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,9 +87,10 @@
 		1BDE84AD210870CC00CA5BC7 /* ZohoCaller */ = {
 			isa = PBXGroup;
 			children = (
-				1BDE84AE210870CC00CA5BC7 /* ZohoCaller.h */,
 				1BDE84C52108710E00CA5BC7 /* ZohoCaller.swift */,
+				1BDE84AE210870CC00CA5BC7 /* ZohoCaller.h */,
 				1BDE84AF210870CC00CA5BC7 /* Info.plist */,
+				1BDE84C72108A2A500CA5BC7 /* ZohoCaller_Assets.xcassets */,
 			);
 			path = ZohoCaller;
 			sourceTree = "<group>";
@@ -87,6 +102,26 @@
 				1BDE84BB210870CC00CA5BC7 /* Info.plist */,
 			);
 			path = ZohoCallerTests;
+			sourceTree = "<group>";
+		};
+		8339E78255ECEA25925E2292 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3BC1935DB77EBF7C3097AF1 /* Pods-ZohoCaller.debug.xcconfig */,
+				F41B18EFC0C8268EEE1B529B /* Pods-ZohoCaller.release.xcconfig */,
+				3C58887154C1CF08788490D0 /* Pods-ZohoCallerTests.debug.xcconfig */,
+				52481C0C454B7894D8C9A541 /* Pods-ZohoCallerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F6B569FA2BF66CC79A617B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B3FB988F572268972800F80 /* Pods_ZohoCaller.framework */,
+				7C26AA869231A4FE4CE37D29 /* Pods_ZohoCallerTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +142,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BDE84BF210870CC00CA5BC7 /* Build configuration list for PBXNativeTarget "ZohoCaller" */;
 			buildPhases = (
+				D87E36BF99E39B79D0C31526 /* [CP] Check Pods Manifest.lock */,
 				1BDE84A6210870CC00CA5BC7 /* Sources */,
 				1BDE84A7210870CC00CA5BC7 /* Frameworks */,
 				1BDE84A8210870CC00CA5BC7 /* Headers */,
@@ -125,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BDE84C2210870CC00CA5BC7 /* Build configuration list for PBXNativeTarget "ZohoCallerTests" */;
 			buildPhases = (
+				76B0849A93D51B5AC941A310 /* [CP] Check Pods Manifest.lock */,
 				1BDE84B0210870CC00CA5BC7 /* Sources */,
 				1BDE84B1210870CC00CA5BC7 /* Frameworks */,
 				1BDE84B2210870CC00CA5BC7 /* Resources */,
+				9A175B6C245CD810271F03D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BDE84C82108A2A500CA5BC7 /* ZohoCaller_Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +231,73 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76B0849A93D51B5AC941A310 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZohoCallerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A175B6C245CD810271F03D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZohoCallerTests/Pods-ZohoCallerTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/ZohoSearchKit/ZohoSearchKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZohoSearchKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZohoCallerTests/Pods-ZohoCallerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D87E36BF99E39B79D0C31526 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZohoCaller-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1BDE84A6210870CC00CA5BC7 /* Sources */ = {
@@ -343,17 +449,19 @@
 		};
 		1BDE84C0210870CC00CA5BC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3BC1935DB77EBF7C3097AF1 /* Pods-ZohoCaller.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = R3JCA5487X;
+				DEVELOPMENT_TEAM = WZKGGU8WG7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ZohoCaller/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,17 +478,19 @@
 		};
 		1BDE84C1210870CC00CA5BC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F41B18EFC0C8268EEE1B529B /* Pods-ZohoCaller.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = R3JCA5487X;
+				DEVELOPMENT_TEAM = WZKGGU8WG7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ZohoCaller/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,6 +506,7 @@
 		};
 		1BDE84C3210870CC00CA5BC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C58887154C1CF08788490D0 /* Pods-ZohoCallerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -415,6 +526,7 @@
 		};
 		1BDE84C4210870CC00CA5BC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52481C0C454B7894D8C9A541 /* Pods-ZohoCallerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
